@@ -28,16 +28,17 @@
     <!--- StringHttpMessageConverter bean -->
     <bean id = "stringHttpMessageConverter" class = "org.springframework.http.converter.StringHttpMessageConverter"/>
 
+
     <!-- 启动Spring MVC的注解功能，完成请求和注解POJO的映射 -->
-    <bean class ="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" >
+    <!--<bean class ="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" >
         <property name= "messageConverters" >
             <list>
                 <ref bean= "mappingJacksonHttpMessageConverter" />
-                <!-- 新增的StringMessageConverter bean-->
+                &lt;!&ndash; 新增的StringMessageConverter bean&ndash;&gt;
                 <ref bean= "stringHttpMessageConverter" />
                 <ref bean= "jsonHttpMessageConverter" />
                 <ref bean= "formHttpMessageConverter" />
             </list>
         </property>
-    </bean>
+    </bean>-->
 </beans>

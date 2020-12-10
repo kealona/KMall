@@ -7,7 +7,7 @@
                 <package name="com.linglett.pojo"/>
         </typeAliases>
         <mappers>
-                <mapper resource="com/linglett/dao/UserMapper.xml"/>
+                <mapper resource="mapper/UserMapper.xml"/>
         </mappers>
 
         </configuration>

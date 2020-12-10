@@ -5,10 +5,17 @@
 
 <mapper namespace="com.linglett.dao.UserMapper">
 
-    <!--增加一个Book-->
+    <!--用户登录-->
+    <select id="LoginUser" parameterType="com.linglett.pojo.User" resultType="com.linglett.pojo.User">
+        select * from user where userId = #{loginUser.userId};
+    </select>
+    <!--<select id="loginUser" parameterType="string" resultType="boolean">
+        select * from shopping.user where userId=#{userId}
+    </select>-->
 
     <!--根据id删除一个Book-->
     <delete id="deleteUserById" parameterType="string">
         delete from shopping.user where userId=#{userId}
     </delete>
+
 </mapper>

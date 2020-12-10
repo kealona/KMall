@@ -48,7 +48,7 @@
         <property name="basePackage" value="com.linglett.dao"/>
     </bean>
 
-    <bean id="UserServiceImpl" class="com.linglett.service.UserServiceImpl">
+    <bean id="UserServiceImpl" class="com.linglett.service.Impl.UserServiceImpl">
         <property name="userMapper" ref="userMapper"/>
     </bean>
 

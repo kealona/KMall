@@ -7,11 +7,15 @@ import lombok.NoArgsConstructor;
 import java.util.Date;
 
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
 public class User {
-    private String password;
+    public User(String username,String password ) {
+        this.password = password;
+        this.username = username;
+    }
+
+    private String userId;
     private String username;
+    private String password;
     private String sex;
     private String email;
     private String phone;
@@ -19,4 +23,9 @@ public class User {
     private String createTime;
     private int role;
     private Date description;
+
+    public User() {
+
+    }
 }
+
