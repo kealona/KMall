@@ -9,13 +9,28 @@
     <select id="LoginUser" parameterType="com.linglett.pojo.User" resultType="com.linglett.pojo.User">
         select * from user where userId = #{loginUser.userId};
     </select>
-    <!--<select id="loginUser" parameterType="string" resultType="boolean">
-        select * from shopping.user where userId=#{userId}
-    </select>-->
 
-    <!--根据id删除一个Book-->
+    <!--根据id删除一个User-->
     <delete id="deleteUserById" parameterType="string">
         delete from shopping.user where userId=#{userId}
     </delete>
+
+    <!-- 用户注册 -->
+    <insert id="SignUpUser" parameterType="com.linglett.pojo.User">
+        insert into user(userId,password,username) value(#{register.userId,jdbcType=VARCHAR},#{register.password,jdbcType=VARCHAR},#{register.username,jdbcType=VARCHAR});
+    </insert>
+
+    <!-- 修改用户密码 -->
+    <update id="updatePassword" parameterType="com.linglett.pojo.User">
+        update user
+        set
+            password = #{newPassword.password,jdbcType=VARCHAR}
+        where userId = #{newPassword.userId,jdbcType=VARCHAR}
+    </update>
+
+    <!-- 修改用户信息 -->
+<!--    <update id="updateUserInfo" parameterType="com.linglett.pojo.User">-->
+<!--        update user set -->
+<!--    </update>-->
 
 </mapper>

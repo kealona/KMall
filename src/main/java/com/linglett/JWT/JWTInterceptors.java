@@ -21,7 +21,7 @@ public class JWTInterceptors implements HandlerInterceptor {
         //获取请求中的令牌
         String token = request.getHeader("token");
         try{
-            JWTUtils.verify(token);//验证令牌
+           // JWTUtils.verify(token);//验证令牌
             return true;//放行请求
         }catch (SignatureVerificationException e){
             System.out.println("签名不一致异常");

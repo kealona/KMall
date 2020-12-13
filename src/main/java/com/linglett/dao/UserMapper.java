@@ -15,13 +15,26 @@ public interface UserMapper {
     */
    User LoginUser(@Param("loginUser") User user);
 
-    //int addUser(User user);
+   /**
+    * 用户注册，向数据库添加一条用户数据
+    * @return 返回添加的结果
+    */
+   void SignUpUser(@Param("register") User user);
 
     //根据id删除一个Book
    // void deleteUserById(String userId);
 
-    //更新Book
-   // int updateUser(User user);
+   /**
+    * 更新用户信息
+    * @param user 需要修改的用户信息
+    */
+    void updateUserInfo(@Param("Userdata") User user);
+
+   /**
+    * 修改用户密码
+    * @param user
+    */
+    void updatePassword(@Param("newPassword")User user);
 
     //根据id查询,返回一个Book
    // User queryUserById(int userId);

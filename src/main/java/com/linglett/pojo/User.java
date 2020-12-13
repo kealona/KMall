@@ -8,9 +8,9 @@ import java.util.Date;
 
 @Data
 public class User {
-    public User(String username,String password ) {
+    public User(String userId,String password ) {
         this.password = password;
-        this.username = username;
+        this.userId = userId;
     }
 
     private String userId;
@@ -23,6 +23,7 @@ public class User {
     private String createTime;
     private int role;
     private Date description;
+    private String token;
 
     public User() {
 
