@@ -2,10 +2,6 @@ package com.linglett.dao;
 
 import com.linglett.pojo.User;
 import org.apache.ibatis.annotations.Param;
-import org.apache.ibatis.annotations.Select;
-
-import java.util.List;
-import java.util.Map;
 
 public interface UserMapper {
    /**
@@ -21,8 +17,11 @@ public interface UserMapper {
     */
    void SignUpUser(@Param("register") User user);
 
-    //根据id删除一个Book
-   // void deleteUserById(String userId);
+    /**
+     * 根据用户Id删除用户的所有信息
+     * @param userId 要删除的用户的Id
+     */
+    void deleteUserById(String userId);
 
    /**
     * 更新用户信息

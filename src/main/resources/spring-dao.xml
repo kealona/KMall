@@ -54,6 +54,10 @@
         <property name="userMapper" ref="userMapper"/>
     </bean>
 
+    <bean id="SearchServiceImpl" class="com.linglett.service.Impl.SearchServiceImpl">
+        <property name="SearchMapper" ref="searchMapper"/>
+    </bean>
+
 
     <!-- 配置事务管理器 -->
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
