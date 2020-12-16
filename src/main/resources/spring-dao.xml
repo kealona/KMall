@@ -58,6 +58,30 @@
         <property name="SearchMapper" ref="searchMapper"/>
     </bean>
 
+    <bean id="GoodServiceImpl" class="com.linglett.service.Impl.GoodServiceImpl">
+        <property name="GoodMapper" ref="goodMapper"/>
+    </bean>
+
+    <bean id="ShopServiceImpl" class="com.linglett.service.Impl.ShopServiceImpl">
+        <property name="ShopMapper" ref="shopMapper"/>
+    </bean>
+
+    <bean id="CartServiceImpl" class="com.linglett.service.Impl.CartServiceImpl">
+        <property name="cartMapper" ref="cartMapper"/>
+    </bean>
+
+    <bean id="OrderServiceImpl" class="com.linglett.service.Impl.OrderServiceImpl">
+        <property name="orderMapper" ref="orderMapper"/>
+    </bean>
+
+    <bean id="AddressServiceImpl" class="com.linglett.service.Impl.AddressServiceImpl">
+        <property name="addressMapper" ref="addressMapper"/>
+    </bean>
+
+    <bean id="FootprintServiceImpl" class="com.linglett.service.Impl.FootprintServiceImpl">
+        <property name="footprintMapper" ref="footprintMapper"/>
+    </bean>
+
 
     <!-- 配置事务管理器 -->
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">

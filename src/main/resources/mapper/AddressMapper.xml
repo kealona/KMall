@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.linglett.dao.GoodMapper">
+
+    <!--添加收货地址-->
+    <insert id="addAddress" parameterType="com.linglett.pojo.Address">
+        insert into address(id, userId, orderId, receiverName, receiverPhone, receiverProvince, city, district, address, created, postcode, IsDefault)
+            value (#{addAddress.id},#{addAddress.userId},#{addAddress.orderId},#{addAddress.receiverName},#{addAddress.receiverPhone},#{addAddress.receiverProvince},#{addAddress.city},#{addAddress.district},#{addAddress.address},#{addAddress.created},#{addAddress.postcode},#{addAddress.IsDefault})
+    </insert>
+
+    <!--根据id删除一个收获地址-->
+    <delete id="deleteAddress" parameterType="java.math.BigInteger">
+        delete from address where id=#{deleteAddressId}
+    </delete>
+
+    <!-- 查询某个用户的所有收货地址 -->
+    <select id="queryAddress" parameterType="java.lang.String" resultType="com.linglett.pojo.Address">
+        select * from address where id=#{queryAddressId}
+    </select>
+
+    <!-- 修改收货地址信息 -->
+    <update id="updateOrder" parameterType="com.linglett.pojo.Order">
+        update address
+        set
+            userId = #{updateAddress.userId},
+            orderId = #{updateAddress.orderId},
+            receiverName = #{updateAddress.receiverName},
+            receiverPhone = #{updateAddress.receiverPhone},
+            receiverProvince = #{updateAddress.receiverProvince},
+            city = #{updateAddress.city},
+            district = #{updateAddress.district},
+            address = #{updateAddress.address},
+            created = #{updateGood.created},
+            postcode = #{updateAddress.postcode},
+            IsDefault = #{updateAddress.isDefault}
+        where id = #{updateAddress.id}
+    </update>
+
+</mapper>

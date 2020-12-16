@@ -5,10 +5,8 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class shop {
+public class Sort {
     private long id;
-    private String userId;
-    private String shopName;
-    private long orderId;
-    private long commodityId;
+    private long parent_id;
+    private String name;
 }

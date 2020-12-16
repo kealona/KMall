@@ -771,482 +771,463 @@ SELECT|sys.sys_config:null
     <table id="246" parent="7" name="sort"/>
     <table id="247" parent="7" name="spu"/>
     <table id="248" parent="7" name="spuvalue"/>
-    <table id="249" parent="7" name="test"/>
-    <table id="250" parent="7" name="user"/>
-    <column id="251" parent="235" name="id">
+    <table id="249" parent="7" name="user"/>
+    <column id="250" parent="235" name="id">
       <Position>1</Position>
       <DataType>bigint(10)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="252" parent="235" name="userId">
+    <column id="251" parent="235" name="userId">
       <Position>2</Position>
       <DataType>bigint(10)|0s</DataType>
     </column>
-    <column id="253" parent="235" name="orderId">
+    <column id="252" parent="235" name="orderId">
       <Position>3</Position>
       <DataType>bigint(10)|0s</DataType>
     </column>
-    <column id="254" parent="235" name="receiverName">
+    <column id="253" parent="235" name="receiverName">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="255" parent="235" name="receiverPhone">
+    <column id="254" parent="235" name="receiverPhone">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="256" parent="235" name="receiverProvince">
+    <column id="255" parent="235" name="receiverProvince">
       <Position>6</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="257" parent="235" name="city">
+    <column id="256" parent="235" name="city">
       <Position>7</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="258" parent="235" name="district">
+    <column id="257" parent="235" name="district">
       <Position>8</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="259" parent="235" name="address">
+    <column id="258" parent="235" name="address">
       <Position>9</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="260" parent="235" name="created">
+    <column id="259" parent="235" name="created">
       <Position>10</Position>
       <DataType>datetime|0s</DataType>
     </column>
-    <column id="261" parent="235" name="postcode">
+    <column id="260" parent="235" name="postcode">
       <Position>11</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="262" parent="235" name="IsDefault">
+    <column id="261" parent="235" name="IsDefault">
       <Position>12</Position>
       <DataType>int(2)|0s</DataType>
     </column>
-    <key id="263" parent="235" name="PRIMARY">
+    <key id="262" parent="235" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="264" parent="236" name="id">
+    <column id="263" parent="236" name="id">
       <Position>1</Position>
       <DataType>bigint(10)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="265" parent="236" name="userId">
+    <column id="264" parent="236" name="userId">
       <Position>2</Position>
       <DataType>binary(10)|0s</DataType>
     </column>
-    <column id="266" parent="236" name="created">
+    <column id="265" parent="236" name="created">
       <Position>3</Position>
       <DataType>datetime|0s</DataType>
     </column>
-    <column id="267" parent="236" name="proId">
+    <column id="266" parent="236" name="proId">
       <Position>4</Position>
       <DataType>bigint(10)|0s</DataType>
     </column>
-    <column id="268" parent="236" name="number">
+    <column id="267" parent="236" name="number">
       <Position>5</Position>
       <DataType>int(11)|0s</DataType>
     </column>
-    <key id="269" parent="236" name="PRIMARY">
+    <key id="268" parent="236" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="270" parent="237" name="id">
+    <column id="269" parent="237" name="id">
       <Position>1</Position>
       <DataType>bigint(10)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="271" parent="237" name="parent_id">
+    <column id="270" parent="237" name="parent_id">
       <Position>2</Position>
       <DataType>bigint(10)|0s</DataType>
     </column>
-    <column id="272" parent="237" name="content">
+    <column id="271" parent="237" name="content">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="273" parent="237" name="created">
+    <column id="272" parent="237" name="created">
       <Position>4</Position>
       <DataType>datetime|0s</DataType>
     </column>
-    <column id="274" parent="237" name="username">
+    <column id="273" parent="237" name="username">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <key id="275" parent="237" name="PRIMARY">
+    <key id="274" parent="237" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="276" parent="238" name="userId">
+    <column id="275" parent="238" name="userId">
       <Position>1</Position>
       <DataType>bigint(10)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="277" parent="238" name="date">
+    <column id="276" parent="238" name="date">
       <Position>2</Position>
       <DataType>datetime|0s</DataType>
     </column>
-    <column id="278" parent="238" name="proId">
+    <column id="277" parent="238" name="proId">
       <Position>3</Position>
       <DataType>bigint(10)|0s</DataType>
     </column>
-    <key id="279" parent="238" name="PRIMARY">
+    <key id="278" parent="238" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>userId</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="280" parent="239" name="id">
+    <column id="279" parent="239" name="id">
       <Position>1</Position>
       <Comment>商品id</Comment>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="281" parent="239" name="title">
+    <column id="280" parent="239" name="title">
       <Position>2</Position>
       <Comment>商品标题</Comment>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="282" parent="239" name="price">
+    <column id="281" parent="239" name="price">
       <Position>3</Position>
       <Comment>商品价格</Comment>
       <DataType>decimal(10,2 digit)|0s</DataType>
     </column>
-    <column id="283" parent="239" name="imageId">
+    <column id="282" parent="239" name="imageId">
       <Position>4</Position>
       <Comment>商品图片</Comment>
       <DataType>bigint(10)|0s</DataType>
     </column>
-    <column id="284" parent="239" name="sortId">
+    <column id="283" parent="239" name="sortId">
       <Position>5</Position>
       <Comment>所属分类id</Comment>
       <DataType>bigint(20)|0s</DataType>
     </column>
-    <column id="285" parent="239" name="status">
+    <column id="284" parent="239" name="status">
       <Position>6</Position>
       <Comment>商品的状态，0是下架，1是上架</Comment>
       <DataType>int(10)|0s</DataType>
     </column>
-    <column id="286" parent="239" name="created">
+    <column id="285" parent="239" name="created">
       <Position>7</Position>
       <Comment>创建时间</Comment>
       <DataType>datetime|0s</DataType>
     </column>
-    <column id="287" parent="239" name="cover">
+    <column id="286" parent="239" name="cover">
       <Position>8</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="288" parent="239" name="describe">
+    <column id="287" parent="239" name="describe">
       <Position>9</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <key id="289" parent="239" name="PRIMARY">
+    <key id="288" parent="239" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="290" parent="240" name="id">
+    <column id="289" parent="240" name="id">
       <Position>1</Position>
       <DataType>bigint(10)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="291" parent="240" name="orderId">
+    <column id="290" parent="240" name="orderId">
       <Position>2</Position>
       <DataType>bigint(10)|0s</DataType>
     </column>
-    <column id="292" parent="240" name="userId">
+    <column id="291" parent="240" name="userId">
       <Position>3</Position>
       <DataType>bigint(10)|0s</DataType>
     </column>
-    <column id="293" parent="240" name="proId">
+    <column id="292" parent="240" name="proId">
       <Position>4</Position>
       <DataType>bigint(10)|0s</DataType>
     </column>
-    <column id="294" parent="240" name="proName">
+    <column id="293" parent="240" name="proName">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="295" parent="240" name="proImg">
+    <column id="294" parent="240" name="proImg">
       <Position>6</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="296" parent="240" name="price">
+    <column id="295" parent="240" name="price">
       <Position>7</Position>
       <DataType>decimal(10,2 digit)|0s</DataType>
     </column>
-    <column id="297" parent="240" name="number">
+    <column id="296" parent="240" name="number">
       <Position>8</Position>
       <DataType>int(11)|0s</DataType>
     </column>
-    <column id="298" parent="240" name="totalPrice">
+    <column id="297" parent="240" name="totalPrice">
       <Position>9</Position>
       <DataType>decimal(10,2 digit)|0s</DataType>
     </column>
-    <column id="299" parent="240" name="created">
+    <column id="298" parent="240" name="created">
       <Position>10</Position>
       <DataType>datetime|0s</DataType>
     </column>
-    <key id="300" parent="240" name="PRIMARY">
+    <key id="299" parent="240" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="301" parent="241" name="id">
+    <column id="300" parent="241" name="id">
       <Position>1</Position>
       <DataType>bigint(10)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="302" parent="241" name="shoppingId">
+    <column id="301" parent="241" name="shoppingId">
       <Position>2</Position>
       <DataType>bigint(10)|0s</DataType>
     </column>
-    <column id="303" parent="241" name="payment">
+    <column id="302" parent="241" name="payment">
       <Position>3</Position>
       <DataType>decimal(10,2 digit)|0s</DataType>
     </column>
-    <column id="304" parent="241" name="paymentType">
+    <column id="303" parent="241" name="postage">
       <Position>4</Position>
-      <DataType>varchar(255)|0s</DataType>
-    </column>
-    <column id="305" parent="241" name="postage">
-      <Position>5</Position>
       <DataType>decimal(10,2 digit)|0s</DataType>
     </column>
-    <column id="306" parent="241" name="status">
-      <Position>6</Position>
+    <column id="304" parent="241" name="status">
+      <Position>5</Position>
       <DataType>int(2)|0s</DataType>
     </column>
-    <column id="307" parent="241" name="sendTime">
+    <column id="305" parent="241" name="sendTime">
+      <Position>6</Position>
+      <DataType>datetime|0s</DataType>
+    </column>
+    <column id="306" parent="241" name="endTime">
       <Position>7</Position>
       <DataType>datetime|0s</DataType>
     </column>
-    <column id="308" parent="241" name="endTime">
+    <column id="307" parent="241" name="payTime">
       <Position>8</Position>
       <DataType>datetime|0s</DataType>
     </column>
-    <column id="309" parent="241" name="payTime">
+    <column id="308" parent="241" name="created">
       <Position>9</Position>
       <DataType>datetime|0s</DataType>
     </column>
-    <column id="310" parent="241" name="created">
+    <column id="309" parent="241" name="closeTime">
       <Position>10</Position>
       <DataType>datetime|0s</DataType>
     </column>
-    <column id="311" parent="241" name="closeTime">
-      <Position>11</Position>
-      <DataType>datetime|0s</DataType>
-    </column>
-    <key id="312" parent="241" name="PRIMARY">
+    <key id="310" parent="241" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="313" parent="242" name="orderId">
+    <column id="311" parent="242" name="orderId">
       <Position>1</Position>
       <DataType>bigint(10)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="314" parent="242" name="parent_id">
+    <column id="312" parent="242" name="parent_id">
       <Position>2</Position>
       <DataType>bigint(10)|0s</DataType>
     </column>
-    <key id="315" parent="242" name="PRIMARY">
+    <key id="313" parent="242" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>orderId</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="316" parent="243" name="id">
+    <column id="314" parent="243" name="id">
       <Position>1</Position>
       <DataType>bigint(10)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="317" parent="243" name="orderId">
+    <column id="315" parent="243" name="orderId">
       <Position>2</Position>
       <DataType>bigint(10)|0s</DataType>
     </column>
-    <column id="318" parent="243" name="userId">
+    <column id="316" parent="243" name="userId">
       <Position>3</Position>
       <DataType>bigint(10)|0s</DataType>
     </column>
-    <column id="319" parent="243" name="payPlateform">
+    <column id="317" parent="243" name="payPlateform">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="320" parent="243" name="status">
+    <column id="318" parent="243" name="status">
       <Position>5</Position>
       <DataType>int(2)|0s</DataType>
     </column>
-    <column id="321" parent="243" name="created">
+    <column id="319" parent="243" name="created">
       <Position>6</Position>
       <DataType>datetime|0s</DataType>
     </column>
-    <column id="322" parent="243" name="price">
+    <column id="320" parent="243" name="price">
       <Position>7</Position>
       <DataType>decimal(10,2 digit)|0s</DataType>
     </column>
-    <key id="323" parent="243" name="PRIMARY">
+    <key id="321" parent="243" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="324" parent="244" name="id">
+    <column id="322" parent="244" name="id">
       <Position>1</Position>
       <DataType>bigint(10)|0s</DataType>
     </column>
-    <column id="325" parent="244" name="parent_id">
+    <column id="323" parent="244" name="parent_id">
       <Position>2</Position>
       <DataType>bigint(10)|0s</DataType>
     </column>
-    <column id="326" parent="244" name="url">
+    <column id="324" parent="244" name="url">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="327" parent="245" name="id">
+    <column id="325" parent="245" name="id">
       <Position>1</Position>
       <DataType>bigint(10)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="328" parent="245" name="shopName">
+    <column id="326" parent="245" name="shopName">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="329" parent="245" name="commodityId">
+    <column id="327" parent="245" name="commodityId">
       <Position>3</Position>
       <DataType>bigint(10)|0s</DataType>
     </column>
-    <column id="330" parent="245" name="orderId">
+    <column id="328" parent="245" name="orderId">
       <Position>4</Position>
       <DataType>bigint(10)|0s</DataType>
     </column>
-    <column id="331" parent="245" name="userId">
+    <column id="329" parent="245" name="userId">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <key id="332" parent="245" name="PRIMARY">
+    <key id="330" parent="245" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="333" parent="246" name="id">
+    <column id="331" parent="246" name="id">
       <Position>1</Position>
       <Comment>分类id</Comment>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="334" parent="246" name="parent_id">
+    <column id="332" parent="246" name="parent_id">
       <Position>2</Position>
       <Comment>父分类id id等于0代表根父分类</Comment>
       <DataType>bigint(20)|0s</DataType>
     </column>
-    <column id="335" parent="246" name="name">
+    <column id="333" parent="246" name="name">
       <Position>3</Position>
       <Comment>分类名称</Comment>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <key id="336" parent="246" name="PRIMARY">
+    <key id="334" parent="246" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="337" parent="247" name="spuId">
+    <column id="335" parent="247" name="spuId">
       <Position>1</Position>
       <DataType>bigint(10)|0s</DataType>
     </column>
-    <column id="338" parent="247" name="spuName">
+    <column id="336" parent="247" name="spuName">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="339" parent="247" name="parent_id">
+    <column id="337" parent="247" name="parent_id">
       <Position>3</Position>
       <DataType>bigint(10)|0s</DataType>
     </column>
-    <column id="340" parent="248" name="id">
+    <column id="338" parent="248" name="id">
       <Position>1</Position>
       <DataType>bigint(10)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="341" parent="248" name="parent_id">
+    <column id="339" parent="248" name="parent_id">
       <Position>2</Position>
       <DataType>bigint(10)|0s</DataType>
     </column>
-    <column id="342" parent="248" name="value">
+    <column id="340" parent="248" name="value">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="343" parent="248" name="stu_id">
+    <column id="341" parent="248" name="stu_id">
       <Position>4</Position>
       <DataType>bigint(10)|0s</DataType>
     </column>
-    <column id="344" parent="248" name="stock">
+    <column id="342" parent="248" name="stock">
       <Position>5</Position>
       <DataType>int(5)|0s</DataType>
     </column>
-    <key id="345" parent="248" name="PRIMARY">
+    <key id="343" parent="248" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="346" parent="249" name="testId">
-      <Position>1</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="347" parent="249" name="testName">
-      <Position>2</Position>
-      <DataType>varchar(255)|0s</DataType>
-    </column>
-    <key id="348" parent="249" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>testId</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <column id="349" parent="250" name="userId">
+    <column id="344" parent="249" name="userId">
       <Position>1</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="350" parent="250" name="password">
+    <column id="345" parent="249" name="password">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="351" parent="250" name="username">
+    <column id="346" parent="249" name="username">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="352" parent="250" name="phone">
+    <column id="347" parent="249" name="phone">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="353" parent="250" name="role">
+    <column id="348" parent="249" name="role">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="354" parent="250" name="createTime">
+    <column id="349" parent="249" name="createTime">
       <Position>6</Position>
       <DataType>datetime|0s</DataType>
     </column>
-    <column id="355" parent="250" name="headImg">
+    <column id="350" parent="249" name="headImg">
       <Position>7</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="356" parent="250" name="email">
+    <column id="351" parent="249" name="email">
       <Position>8</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="357" parent="250" name="sex">
+    <column id="352" parent="249" name="sex">
       <Position>9</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="358" parent="250" name="address">
+    <column id="353" parent="249" name="address">
       <Position>10</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="359" parent="250" name="description">
+    <column id="354" parent="249" name="description">
       <Position>11</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <key id="360" parent="250" name="PRIMARY">
+    <key id="355" parent="249" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>userId</ColNames>
       <Primary>1</Primary>

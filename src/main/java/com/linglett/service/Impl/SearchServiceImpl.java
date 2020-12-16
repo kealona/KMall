@@ -7,10 +7,7 @@ import com.linglett.pojo.shop;
 import com.linglett.service.SearchService;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
-import java.util.Map;
 
 public class SearchServiceImpl implements SearchService {
 

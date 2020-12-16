@@ -13,7 +13,6 @@ public interface UserMapper {
 
    /**
     * 用户注册，向数据库添加一条用户数据
-    * @return 返回添加的结果
     */
    void SignUpUser(@Param("register") User user);
 
@@ -31,7 +30,7 @@ public interface UserMapper {
 
    /**
     * 修改用户密码
-    * @param user
+    * @param user 需要修改的用户
     */
     void updatePassword(@Param("newPassword")User user);
 

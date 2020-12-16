@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.linglett.dao.GoodMapper">
+
+    <!--把商品添加到购物车-->
+    <insert id="addToCart">
+        insert into cart(id, userId, created, proId, number)
+            value (#{addCartGood.id},#{addCartGood.userId},#{addCartGood.created},#{addCartGood.proId},#{addCartGood.number})
+    </insert>
+
+    <!--根据id删除一个商品-->
+    <delete id="deleteFromGood">
+        delete from cart where proId=#{deleteCartGood}
+    </delete>
+
+    <!-- 查询某人的购物车 -->
+    <select id="queryCart" resultType="com.linglett.pojo.goods">
+        select * from goods where id=(select id from cart where userId=#{queryUserId})
+    </select>
+
+
+</mapper>

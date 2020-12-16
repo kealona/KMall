@@ -5,10 +5,8 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class shop {
+public class Footprint {
     private long id;
-    private String userId;
-    private String shopName;
-    private long orderId;
-    private long commodityId;
+    private String date;
+    private long proId;
 }

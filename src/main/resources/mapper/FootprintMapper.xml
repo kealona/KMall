@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.linglett.dao.FootprintMapper">
+
+    <!--添加历史记录-->
+    <insert id="addFootprint">
+        insert into footprint(userId, date, proId)
+            value (#{addFootprint.userId},#{addFootprint.date},#{addFootprint.proId})
+    </insert>
+
+    <!--根据id删除一个历史记录-->
+    <delete id="deleteFootprint">
+        delete from footprint where proId=#{deleteFootprint}
+    </delete>
+
+    <!-- 查询某人的所有历史记录 -->
+    <select id="queryFootprint" resultType="com.linglett.pojo.Footprint">
+        select * from footprint where userId=#{queryFootprint}
+    </select>
+
+
+</mapper>

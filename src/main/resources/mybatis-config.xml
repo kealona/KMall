@@ -9,6 +9,12 @@
         <mappers>
                 <mapper resource="mapper/UserMapper.xml"/>
                 <mapper resource="mapper/SearchMapper.xml"/>
+                <mapper resource="mapper/GoodMapper.xml"/>
+                <mapper resource="mapper/ShopMapper.xml"/>
+                <mapper resource="mapper/CartMapper.xml"/>
+                <mapper resource="mapper/OrderMapper.xml"/>
+                <mapper resource="mapper/AddressMapper.xml"/>
+                <mapper resource="mapper/FootprintMapper.xml"/>
         </mappers>
 
         </configuration>
